@@ -15,17 +15,19 @@ class _GalleryScreenState extends State<GalleryScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
       appBar: AppBar(
-        title: const Text('Gallery'),
+        title: const Text(
+          'Gallery',
+          style: TextStyle(
+            color: Colors.white,
+          ),
+        ),
         centerTitle: true,
         backgroundColor: AppColors.mainColor,
       ),
       backgroundColor: AppColors.accentColor,
-      body: 
-      
-      Padding(
-        padding: const EdgeInsets.only(top:4, bottom: 4),
+      body: Padding(
+        padding: const EdgeInsets.only(top: 4, bottom: 4),
         child: MasonryGridView.builder(
           itemCount: 9,
           gridDelegate: const SliverSimpleGridDelegateWithFixedCrossAxisCount(
