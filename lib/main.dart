@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:staggered_grid_view_test/screens/gallery_screen.dart';
 
 void main() {
@@ -15,6 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primarySwatch: Colors.grey,
       ),
+      debugShowCheckedModeBanner: false,
       home: const GalleryScreen(),
     );
   }
